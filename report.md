@@ -44,17 +44,11 @@ The neural network (NN) models were design with two hidden layers of 256 nodes e
 The list of hyperparameters of the current commit is as follows:
 
 BUFFER_SIZE = int(1e5)  # replay buffer size
-
 BATCH_SIZE = 128        # minibatch size
-
 GAMMA = 0.99            # discount factor
-
 TAU = 1e-3              # for soft update of target parameters
-
 LR_ACTOR = 1e-3         # learning rate of the actor 
-
 LR_CRITIC = 1e-3        # learning rate of the critic
-
 WEIGHT_DECAY = 0        # L2 weight decay
 
 
@@ -63,6 +57,7 @@ WEIGHT_DECAY = 0        # L2 weight decay
 The following plot shows the joint training evoluiton of the 20 agents, over multiple episodes. The agents learn by episode 148 how to obtain an average reward (over 100 episodes) of at least +30. The reward is henceforth maintained.
 
 ![image](https://github.com/mionescu/udacity-continuous-control/blob/master/rewards_plot_v1.png)
+
 *Rewards evolution over multiple episodes*
 
 ### 4. Discussion
