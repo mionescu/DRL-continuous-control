@@ -32,7 +32,7 @@ The Mean-squared Bellman error is defined by the Expectation[ (Q_locals - Q_targ
 *Local actor network update*
 The actor network learns in the basis of the local critic network through gradient ascent with a learning rate of LR_ACTOR. The local actor network predicts a best action *a* to take for a given state *s*, which is then used as an input to compute the total expected reward estimated using the local critic Q-value function. The negative of the total reward constitute the actor "loss" (hence performing gradient acent on the total reward).
 
-* Target networks update*
+*Target networks update*
 The update of the target networks is performed via a parameter TAU such that: target_params = TAU*train_params + (1-TAU)*target_params.
 
 
@@ -56,7 +56,7 @@ WEIGHT_DECAY = 0        # L2 weight decay
 
 The following plot shows the joint training evoluiton of the 20 agents, over multiple episodes. The agents learn by episode 148 how to obtain an average reward (over 100 episodes) of at least +30. The reward is henceforth maintained.
 
-![image](https://github.com/mionescu/udacity-navigation/blob/report_improvement/rewards_plot_v1.png)
+![image](https://github.com/mionescu/udacity-continuous-control/blob/master/rewards_plot_v1.png)
 *Rewards evolution over multiple episodes*
 
 ### 4. Discussion
